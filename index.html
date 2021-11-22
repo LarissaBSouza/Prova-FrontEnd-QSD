@@ -4,46 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Prova FontEnd</title>
 </head>
 <body>
-    <div class="login-titulo-mobile">
-        <h1><strong>Login</strong></h1>
-    </div>
-    <div class="logos-redesSociais">
+    <div class="corpo-mobile">
+        <div class="login-titulo-mobile">
+            <h1><strong>Login</strong></h1>
+        </div>
+        <div class="logos-redesSociais">
         <!--Link para as redes sociais-->
-        <a href="https://pt-br.facebook.com/"><img src="images/facebook.png" alt="logo-facebook" id="logo-facebook"></a>
-        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><img src="images/twitter.png" alt="logo-twitter" id="logo-twitter"></a>
-        <a href="https://br.linkedin.com/"><img src="images/linkedin.png" alt="logo-linkedin" id="logo-linkedin"></a>
-    </div>
-    <div class="text-account">
-        <p>ou use a sua conta</p>
-    </div>
-    <!--Início de Formulários de Login-->
-    <form action=""></form>
-            <div class="forms-login">
-                <input type="email" placeholder="E-mail">
+            <a href="https://pt-br.facebook.com/"><img src="images/facebook.png" alt="logo-facebook" id="logo-facebook"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"><img src="images/twitter.png" alt="logo-twitter" id="logo-twitter"></a>
+            <a href="https://br.linkedin.com/"><img src="images/linkedin.png" alt="logo-linkedin" id="logo-linkedin"></a>
+        </div>
+        <div class="text-account">
+            <p>ou use a sua conta</p>
+        </div>
+        <!--Início de Formulários de Login-->
+        <form action="app.js"></form>
+            <div class="login" >
+                <input type="email" placeholder="E-mail" value=" " id="email" required>
             </div>
-            <div class="forms-password">
-                <input type="password" placeholder="Senha">
+            <div class="password" id="senha">
+                <input type="password" placeholder="Senha" value=" " id="senha" required>
             </div>
-            <div class="text-account-remember-password">
+            <div class="rememberpassword">
                 <p>Esqueceu sua senha?</p>
             </div>
             <button type="submit"class="entrar">Entrar</button>
-            <div class="text">
+            <div class="text-ou">
                 <p>ou</p>
             </div>
-            <button type="button" class="cadastro"><a href="cadastro.html" rel="next">Cadastre-se</a></button>   
-    </form>
-    <!--Fim de Formulários de Login-->
+            <button type="button" class="cadastro"><a href="cadastro.html" rel="next">Cadastre-se</a></button>
+        </form>
+        <!--Fim de Formulários de Login-->
+    </div>
+    
+    <div class="container">
+        <h1>Olá!</h1>
+        <p>Não possui cadastro?</p>
+        <form action="app.js">
+            <button type="button" class="cadastrodekstop"required><a href="cadastro.html" rel="next">Cadastre-se</a></button>
+        </form>
+    </div>
     
     
-    
 
 
 
@@ -56,7 +63,7 @@
 
 
     
-
+    <script src="app.js">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

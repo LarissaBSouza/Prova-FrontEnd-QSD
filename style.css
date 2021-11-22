@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+
 body {
     text-align: center;
     background-color: #374499;
     color: #8F99DA;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    font-style:unset;
 }
 
 h1 {
@@ -39,6 +46,9 @@ input {
     text-align: center;
     background-color: #B5BCE7;
     color: #374499;
+    overflow: auto;
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
 }
 
 p {
@@ -46,8 +56,28 @@ p {
     margin-bottom: 1rem;
 }
 
-input::before{
-    @media {
-        
+.container {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: inline-block;
+    }
+
+    .cadastro {
+        display:none;
+    }
+
+    .text-ou {
+        display:none;
+    }
+
+    button {
+        margin: 5px;
+    }
+
+    .inicio {
+        display: inline-block;
     }
 }
